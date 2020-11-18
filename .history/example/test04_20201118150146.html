@@ -21,17 +21,14 @@
         const o1 = {
             uname: 'a',
             age: 12,
-            sex: 'male',
-            like2: 'fk_all'
+            sex: 'male'
+            like2: 'fkall'
         };
         const o2 = {
             uname: 'b',
             age: 13,
             sex: 'female',
-            like: 'fk',
-            fk: function () {
-                console.log('hehe');
-            }
+            like: 'fk'
         };
         console.log(Object.assign(o1, o2));
         console.log(o1);

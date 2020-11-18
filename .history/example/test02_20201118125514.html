@@ -25,12 +25,8 @@
         SmartPhone.prototype = new Phone
         SmartPhone.prototype.constructor = SmartPhone;
 
-        SmartPhone.prototype.photo = function () {
-            console.log('能拍照');
-        }
-
         let Nuojiya = new SmartPhone('Nuojiya', 10, 'blue', 1);
-        console.log(Nuojiya);
+        Nuojiya.call();
     </script>
 </body>
 
