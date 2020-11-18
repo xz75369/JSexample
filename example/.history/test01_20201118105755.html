@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* const p = new Promise(function (resolve, reject) {
+            if (0) {
+                resolve('fkad');
+            }
+            reject('fkall');
+        })
+        p.then(function (value) {
+                console.log(value);
+            },
+            function (reason) {
+                console.log(reason);
+            }) */
+
+        /* const p = new Promise((resolve, reject) => {
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    if (xhr.status >= 200 && xhr.status <= 300) {
+                        resolve(xhr.response);
+                    } else {
+                        reject(xhr.status);
+                    }
+                }
+            }
+
+        })
+        p.then(function (value) {
+            console.log(value);
+        }, function (reason) {
+            console.log(reason);
+        }) */
+
+        /* const p = new Promise((resolve, reject) => {
+            fs.readFile('./resources/为学.md', (err, data) => {
+                resolve(data);
+            });
+        })
+
+        p.then(value => {
+            return new Promise((resolve, reject) => {
+                fs.readFile('./resources/插秧诗.md', (err, data) => {
+                    resolve([value, data]);
+                });
+            })
+        }).then(value => {
+            return new Promise((resolve, reject) => {
+                fs.readFile('./resources/观书有感.md', (err, data) => {
+                    value.push(data);
+                    return value
+                });
+            })
+        }).then(value => {
+            console.log(value.join('/r/n'));
+        }) */
+
+        let arr = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+        let arr2 = [4, 5, 6, 5, 6];
+
+        console.log([...new Set(arr)]); //[1,2,3,4,5]
+
+        /* //交集
+        let result = arr.filter((item) => {
+            let str = new Set(arr2);
+            if (str.has(item)) {
+                return true;
+            } else {
+                return false;
+            }
+        })
+        console.log([...new Set(result)]);      //[4,5] */
+        //
+        /*  //并集
+         let s1 = new Set(arr);
+         let s2 = new Set(arr2);
+         let result1 = [...s1, ...s2];
+         let result2 = [...new Set(result1)];
+         console.log(result2);
+         //并集高效版
+         let result = [...new Set([...arr, ...arr2])];
+         console.log(result); 
+
+        //差集（①里面有，而②里面没有）
+        let result = arr.filter(item => {
+            let s2 = new Set(arr2);
+            if (s2.has(item)) {
+                return false;
+            } else {
+                return true;
+            }
+        })
+        console.log([...new Set(result)]); */
+
+        //fkall
+        //再次fkall
+    </script>
+</body>
+
+</html>
